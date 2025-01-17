@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    /* Colors */
+    --white: hsl(0, 0%, 100%);
+    --stone-100: hsl(30, 54%, 90%);
+    --stone-150: hsl(30, 18%, 87%);
+    --stone-600: hsl(30, 10%, 34%);
+    --stone-900: hsl(24, 5%, 18%);
+    --brown-800: hsl(14, 45%, 36%);
+    --rose-800: hsl(332, 51%, 32%);
+    --rose-50: hsl(330, 100%, 98%);
+
+    /* Typography */
+    --font-size: 16px;
+    --font-young-serif: "Young Serif", serif; /* Header font */
+    --font-outfit: "Outfit", serif; /* Body font */
+    --font-weight-bold: 700;
+}
+
+body {
+    margin: 0;
+    font-family: var(--font-outfit);
+    color: var(--stone-600);
+    line-height: 1.75;
+    list-style-position: inside;
+    background-color: var(--white);
+}
+
+main {
+    padding: 32px;
+}
+
+h1 {
+    font-family: var(--font-young-serif);
+    margin-bottom: 24px;
+    color: var(--stone-900);
+}
+
+h2 {
+    color: var(--brown-800);
+    margin-bottom: 24px;
+    font-family: var(--font-young-serif);
+}
+
+section {
+    margin-bottom: 32px;
+}
+
+li {
+    margin-bottom: 8px;
+    color: var(--rose-800);
+    text-indent: -16px;
+    padding-left: 16px;
+}
+
+span {
+    position: relative;
+    right: -16px;
+    color: var(--stone-600);
+}
+
+.hero-img {
+    height: 171px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.prep-section {
+    background-color: var(--rose-50);
+    padding: 24px;
+    border-radius: 15px;
+}
+
+.prep-section h2 {
+    color: var(--rose-800);
+    margin-bottom: 16px;
+    font-family: var(--font-outfit);
+}
+
+table {
+    width: 100%;
+    margin-bottom: 32px;
+    text-align: left;
+}
+
+table caption {
+    margin-bottom: 16px;
+    text-align: left;
+}
+
+th, td {
+    border-bottom: 1px solid var(--stone-150);
+}
+
+table td {
+    font-weight: var(--font-weight-bold);
+    color: var(--brown-800);
+}
