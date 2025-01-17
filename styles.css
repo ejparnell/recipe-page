@@ -68,10 +68,11 @@ span {
     color: var(--stone-600);
 }
 
-.hero-img {
+img {
     height: 171px;
-    width: 100%;
     object-fit: cover;
+    margin: -32px 0 0 -32px;
+    width: calc(100% + 64px);
 }
 
 .prep-section {
@@ -104,4 +105,30 @@ th, td {
 table td {
     font-weight: var(--font-weight-bold);
     color: var(--brown-800);
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        background-color: var(--stone-100);
+        margin: 128px 48px;
+    }
+
+    main {
+        padding: 40px;
+        background-color: var(--white);
+        border-radius: 15px;
+    }
+
+    img {
+        height: 300px;
+        border-radius: 15px;
+        width: 100%;
+        margin: 0px;
+    }
 }
